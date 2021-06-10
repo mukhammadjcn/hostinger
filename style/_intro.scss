@@ -1,0 +1,42 @@
+.intro{
+    padding: 100px 0;
+    // background: rgb(7,60,172);
+    // background: linear-gradient(95deg, rgba(7,60,172,1) 0%, rgba(42,119,247,1) 50%, rgba(77,143,255,1) 100%);
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .intro_text{
+            flex-basis: 50%;
+            font-family: 'Montserrat', sans-serif;
+            .intro_title{
+                font-weight: bold;
+                font-size: 52px;
+                line-height: 65px;
+                color: #FFFFFF;
+            }
+            .intro_information{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 39px;
+                color: #FFFFFF;
+                padding: 30px 0;
+            }
+            .intro-btn{
+                padding: 26px 56px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+
+        }
+        .intro-svg{
+            flex-basis: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+
+// Other scss codes
+@import './header';
+@import './intro';
+@import './components';
+@import './services';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+
+// Components
+.main{
+    background: rgb(7,60,172);
+    background: linear-gradient(95deg, rgba(7,60,172,1) 0%, rgba(42,119,247,1) 50%, rgba(77,143,255,1) 100%);
+}
+.btn{
+    background: #EF7F3C;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        -webkit-box-shadow: 5px 5px 13px #ef7f3c;
+        -moz-box-shadow: 5px 5px 13px rgba(239, 126, 60, 0.3);
+    }
+}
+.section_title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #111111;
+    text-align: center;
+}
+.section_information{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #2B324C;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// Problems
+.problems{
+    padding: 60px 0;
+    .section_title{
+        color: #fff;
+        width: 70%;
+        margin: auto;
+    }
+    .section_label{
+        padding: 30px 0 20px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 39px;
+        color: #FFFFFF;
+    }
+    .box{
+        padding-top: 30px;
+        .patient{
+            transition: 0.3s ease-in-out;
+            &:hover{
+                transform: translateY(-16px);
+            }
+        }
+    }
+}
+
+// Server
+.server{
+    padding: 60px 0;
+    text-align: center;
+    .section_information{
+        padding: 20px 0;
+        width: 60%;
+        margin: auto;
+    }
+    .server_image{
+        margin: auto;
+        object-fit: cover;
+        height: 530px;
+        background-image: url('../images/Images.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box{
+        justify-content: center;
+        text-align: left;
+        gap: 40px;
+        padding-top: 8px;
+        .advantage{
+            text-align: initial;
+            padding-top: 32px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            &::before{
+                content: url('../images/Vector.svg');
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+// Happy mini section
+.happy{
+    background: url('../images/Bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 60px 0;
+
+    .box{
+        flex-direction: row-reverse;
+        width: 80%;
+        div{
+            flex-basis: 50%;
+        }
+        .section_title, .section_information{
+            text-align: initial;
+            color: #fff;
+            padding: 10px 0;
+        }
+    }
+}
+
+// Hosting features
+.features{
+    padding: 60px 0;
+    .box{
+        padding: 20px 0;
+        gap: 30px;
+        .feature{
+            flex-basis: 50%;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                box-shadow: 5px 5px 13px rgba(239, 126, 60, 0.3)  ; 
+                -webkit-box-shadow: 5px 5px 13px rgba(239, 126, 60, 0.3)  ; 
+                -moz-box-shadow: 5px 5px 13px rgba(239, 126, 60, 0.3)  ; 
+            }
+        }
+        .section_title{
+            text-align: initial;
+            flex-basis: 50%;
+        }
+    }
+    
+
+}
+
+// Price Plan
+.plan{
+    padding: 60px 0 120px;
+    background: rgb(7,60,172);
+    background: linear-gradient(95deg, rgba(7,60,172,1) 0%, rgba(42,119,247,1) 50%, rgba(77,143,255,1) 100%);
+    .section_title{
+        color: #fff;
+        width: 40%;
+        margin: auto;
+        padding-bottom: 76px;
+    }
+}
+
+// FAQ
+.faq{
+    padding: 60px 0;
+    .container{
+        max-width: 600px;
+    }
+    .section_title{
+        margin-bottom: 20px;
+    }
+    .question{
+        padding: 30px 0 20px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        border-bottom: 1px solid #DCDCDC;
+        transition: 0.3s ease-in-out;
+        a{
+            color: #2B324C;
+
+        }
+        &:hover{
+            transform: scale(0.99);
+        }
+    }
+}
+
+// Guarantie
+.guarantie{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 60px 0;
+    text-align: center;
+    background-image: url('../images/Bg\ \(1\).png');
+    .section_title{
+        color: #fff;
+        padding: 30px 0;
+    }
+    .section_information{
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        width: 60%;
+        margin: auto;
+    }
+    &_img{
+        width: 600px;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .gr-btn{
+        padding: 16px 44px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
