@@ -358,6 +358,28 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .problems {
   padding: 60px 0;
 }
@@ -573,5 +595,99 @@ body {
   color: #FFFFFF;
   display: inline-block;
   margin-top: 20px;
+}
+
+.footer {
+  background: #061D36;
+  padding-top: 60px;
+}
+
+.footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+
+.footer .row .col-1 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.footer .row .col-2, .footer .row .col-3, .footer .row .col-4 {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.footer .footer-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #5A6978;
+  margin: 38px 0;
+}
+
+.footer__list__item:nth-child(1) {
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.footer__list__item:nth-child(1) a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  border: none !important;
+}
+
+.footer__list__item {
+  margin: 12px 0;
+  list-style-type: none;
+}
+
+.footer__list__item a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #5A6978;
+  padding-left: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-left: thick solid transparent;
+}
+
+.footer__list__item a:hover {
+  border-left: thick solid #EF7F3C;
+}
+
+.footer__bottom {
+  padding: 20px 0;
+}
+
+.footer__bottom hr {
+  border: 1px solid #3B4E61;
+  margin: 60px 0 20px;
+}
+
+.footer__bottom .text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #5A6978;
+}
+
+.footer__bottom .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .heart {
+  display: inline-block;
+  -webkit-animation: animate 1s linear infinite;
+          animation: animate 1s linear infinite;
 }
 /*# sourceMappingURL=main.css.map */

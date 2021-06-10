@@ -54,6 +54,14 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
+@keyframes animate {
+    0% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    } 
+}
 
 // Problems
 .problems{
@@ -238,5 +246,78 @@ body{
         color: #FFFFFF;
         display: inline-block;
         margin-top: 20px;
+    }
+}
+
+// Footer
+.footer{
+    background: #061D36;
+    padding-top: 60px;
+    .row{
+        display: flex;
+        gap: 80px;
+        .col-1{
+            flex-basis: 40%;
+        }
+        .col-2, .col-3, .col-4{
+            flex-basis: 20%;
+        }
+    }
+    .footer-text{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        color: #5A6978;
+        margin: 38px 0;
+    }
+    &__list{
+        &__item:nth-child(1){
+            list-style-type: none;
+            margin-bottom: 40px;
+            a{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: #FFFFFF; 
+                border: none !important;               
+            }
+        }
+        &__item{
+            margin: 12px 0;
+            list-style-type: none;
+            a{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #5A6978;
+                padding-left: 10px;
+                transition: 0.3s ease-in-out;
+                border-left: thick solid transparent;
+                &:hover{
+                    border-left: thick solid #EF7F3C;
+                }
+            }
+        }
+    }
+    &__bottom{
+        padding: 20px 0;
+        hr{
+            border: 1px solid #3B4E61;
+            margin: 60px 0 20px;
+        }
+        .text{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 25px;
+            color: #5A6978;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .heart{
+        display: inline-block;
+        animation: animate 1s linear infinite;
     }
 }
