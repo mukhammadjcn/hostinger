@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
@@ -42,12 +43,19 @@
                     </svg>
                 </a>
 
-                <div class="navbar">
+                <div class="navbar" id="navLinks">
+                    <div class="cancel_btn" onclick="closeMenu()">
+                        <i class="far fa-times-circle"></i>
+                    </div>
                     <a href="#" class="navbar-item">Hosting </a>
                     <a href="#" class="navbar-item">Domain </a>
                     <a href="#" class="navbar-item">Support </a>
                     <a href="#" class="navbar-item">Affiliates</a>
                     <a href="#" class="navbar-item">Partnership</a>
+                </div>
+
+                <div class="hamburger" onclick="showMenu()">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </header>
@@ -631,10 +639,23 @@
                 <hr>
                 <div class="container">
                     <p class="text">© All rights reserved </p>
-                    <p class="text">Made with <span class="heart">❤️</span>  by Ridho Tijan</p>
+                    <p class="text">Made with <span class="heart">❤️</span>  by <a href="https://l.instagram.com/?u=http%3A%2F%2Fmyurls.co%2Fmukhammadjon&e=ATMiULKGvg6xGXRDsdYWbQswOZ8r7EzRZUIP8GMjkle27iazi-Py2hbkz5fC8mKluxBUQ7HIyQGaVHljVoNHBQ&s=1">Mukhammadjon</a></p>
                 </div>
             </div>
         </footer>
 </body>
 
+<script>
+    var navbar = document.getElementById("navLinks");
+    function showMenu(){
+            navbar.style.left = '0px';
+        }
+
+    function closeMenu(){
+        navbar.style.left = '-5000px';
+    }
+
+    
+
+</script>
 </html>

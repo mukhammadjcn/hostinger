@@ -50,6 +50,14 @@ header .container {
   border-bottom: thick solid #EF7F3C;
 }
 
+.hamburger {
+  display: none;
+}
+
+.cancel_btn {
+  display: none;
+}
+
 .intro {
   padding: 130px 0 100px;
 }
@@ -690,6 +698,10 @@ body {
           justify-content: space-between;
 }
 
+.footer__bottom .container a {
+  color: #dddddd;
+}
+
 .footer .heart {
   display: inline-block;
   -webkit-animation: animate 1s linear infinite;
@@ -700,15 +712,50 @@ body {
   .container {
     width: 90%;
   }
+  .services .container .box:last-child {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 992px) {
   .navbar {
-    display: none;
+    position: absolute;
+    top: 0;
+    padding: 60px 0;
+    width: 100%;
+    height: 100vh;
+    left: -5000px;
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%);
+  }
+  .navbar .navbar-item {
+    display: block;
+    font-size: 28px;
+    padding: 68px 0 24px;
+    text-align: center;
+    font-weight: 700;
   }
   .intro .container .intro_text .intro_title {
     font-size: 44px;
     line-height: 60px;
+  }
+  .services .box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hamburger, .cancel_btn {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+  }
+  .cancel_btn {
+    text-align: end;
+    padding: 0 20px;
+    position: relative;
+    top: -46px;
+    font-size: 32px;
   }
 }
 
@@ -775,6 +822,15 @@ body {
 }
 
 @media (max-width: 576px) {
+  .header {
+    padding: 16px 0;
+  }
+  .header .logo svg {
+    width: 60%;
+  }
+  .intro {
+    text-align: center;
+  }
   .intro .container .intro_text .intro_title {
     font-size: 24px;
     line-height: 36px;
@@ -790,8 +846,94 @@ body {
     border-radius: 4px;
   }
   .section_title {
-    font-size: 16px;
+    font-size: 20px;
     line-height: initial;
+  }
+}
+
+@media (max-width: 375px) {
+  .company {
+    padding: 18px;
+  }
+  .problems .section_label {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .patient_title {
+    font-size: 22px;
+  }
+  .patient_information {
+    line-height: 28px;
+  }
+  .server .section_information, .guarantie .section_information {
+    width: auto;
+    font-size: 14px;
+  }
+  .server .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .server .box div {
+    width: 80%;
+  }
+  .happy .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .happy .box .section_information {
+    font-size: 14px;
+  }
+  .features {
+    background: #F2F5FF;
+  }
+  .features .feature {
+    padding: 24px 26px;
+    gap: 20px;
+  }
+  .features .feature .feature_svg svg {
+    height: 54px;
+    width: 54px;
+  }
+  .features .feature .feature_information {
+    width: 100%;
+  }
+  .features .feature .feature_information .feature_title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .features .feature .feature_information .feature_label {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .features .box:nth-child(1) .section_title {
+    text-align: center;
+  }
+  .price {
+    width: 100%;
+  }
+  .faq .question {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .footer__bottom .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
