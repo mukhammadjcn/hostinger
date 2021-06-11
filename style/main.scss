@@ -460,33 +460,6 @@ body{
             width: 80%;
         }
     }
-}
-
-@media (max-width:375px) {
-    .company{
-        padding: 18px;
-    }
-    .problems .section_label{
-        font-size: 16px;
-        line-height: 28px;
-    }
-    .patient_title{
-        font-size: 22px;
-    }
-    .patient_information{
-        line-height: 28px;
-    }
-    // .server .section_information, .guarantie .section_information{
-    //     width: auto;
-    //     font-size: 14px;
-    // }
-    // .server .box{
-    //     flex-direction: column;
-    //     gap: 0;
-    //     div{
-    //         width: 80%;
-    //     }
-    // }
     .happy .box{
         flex-direction: column;
         .section_information{
@@ -537,5 +510,21 @@ body{
             text-align: center;
             gap: 10px;
         }
+    }
+}
+
+@media (max-width:375px) {
+    .company{
+        padding: 18px;
+    }
+    .problems .section_label{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .patient_title{
+        font-size: 22px;
+    }
+    .patient_information{
+        line-height: 28px;
     }
 }

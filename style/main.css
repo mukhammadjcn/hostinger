@@ -865,22 +865,6 @@ body {
   .server .box div {
     width: 80%;
   }
-}
-
-@media (max-width: 375px) {
-  .company {
-    padding: 18px;
-  }
-  .problems .section_label {
-    font-size: 16px;
-    line-height: 28px;
-  }
-  .patient_title {
-    font-size: 22px;
-  }
-  .patient_information {
-    line-height: 28px;
-  }
   .happy .box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -936,6 +920,22 @@ body {
             flex-direction: column;
     text-align: center;
     gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .company {
+    padding: 18px;
+  }
+  .problems .section_label {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .patient_title {
+    font-size: 22px;
+  }
+  .patient_information {
+    line-height: 28px;
   }
 }
 /*# sourceMappingURL=main.css.map */
