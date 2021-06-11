@@ -819,6 +819,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .server .section_information, .guarantie .section_information {
+    width: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -849,6 +852,19 @@ body {
     font-size: 20px;
     line-height: initial;
   }
+  .server .section_information, .guarantie .section_information {
+    font-size: 14px;
+  }
+  .server .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .server .box div {
+    width: 80%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -864,20 +880,6 @@ body {
   }
   .patient_information {
     line-height: 28px;
-  }
-  .server .section_information, .guarantie .section_information {
-    width: auto;
-    font-size: 14px;
-  }
-  .server .box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 0;
-  }
-  .server .box div {
-    width: 80%;
   }
   .happy .box {
     -webkit-box-orient: vertical;
