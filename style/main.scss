@@ -511,9 +511,6 @@ body{
             gap: 10px;
         }
     }
-}
-
-@media (max-width:375px) {
     .company{
         padding: 18px;
     }
@@ -527,4 +524,7 @@ body{
     .patient_information{
         line-height: 28px;
     }
+}
+
+@media (max-width:375px) {
 }
