@@ -395,6 +395,11 @@ body {
 
 .problems {
   padding: 60px 0;
+  background: #073cac;
+  background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%), url(../images/Style.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-blend-mode: color-burn;
 }
 
 .problems .section_title {
@@ -528,7 +533,10 @@ body {
 .plan {
   padding: 60px 0 120px;
   background: #073cac;
-  background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%);
+  background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%), url(../images/Style.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-blend-mode: color-burn;
 }
 
 .plan .section_title {
@@ -933,6 +941,12 @@ body {
   }
   .patient_information {
     line-height: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .faq .question {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */

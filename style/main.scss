@@ -66,6 +66,11 @@ body{
 // Problems
 .problems{
     padding: 60px 0;
+    background: #073cac;
+    background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%),url(../images/Style.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
     .section_title{
         color: #fff;
         width: 70%;
@@ -176,8 +181,11 @@ body{
 // Price Plan
 .plan{
     padding: 60px 0 120px;
-    background: rgb(7,60,172);
-    background: linear-gradient(95deg, rgba(7,60,172,1) 0%, rgba(42,119,247,1) 50%, rgba(77,143,255,1) 100%);
+    background: #073cac;
+    background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%),url(../images/Style.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
     .section_title{
         color: #fff;
         width: 40%;
@@ -527,4 +535,7 @@ body{
 }
 
 @media (max-width:375px) {
+    .faq .question {
+        font-size: 14px;
+    }
 }
