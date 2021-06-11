@@ -9,7 +9,12 @@
 }
 
 header {
-  padding: 48px 0;
+  position: fixed;
+  width: 100%;
+  padding: 28px 0;
+  z-index: 10;
+  background: #073cac;
+  background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%);
 }
 
 header .container {
@@ -46,7 +51,7 @@ header .container {
 }
 
 .intro {
-  padding: 100px 0;
+  padding: 130px 0 100px;
 }
 
 .intro .container {
@@ -689,5 +694,104 @@ body {
   display: inline-block;
   -webkit-animation: animate 1s linear infinite;
           animation: animate 1s linear infinite;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .intro .container .intro_text .intro_title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro .container, .box, .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .guarantie_img {
+    width: auto;
+  }
+  .plan .section_title {
+    width: auto;
+  }
+  .price {
+    width: 80%;
+  }
+  .features .box:nth-child(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features .box:nth-child(1) .section_title {
+    padding-bottom: 30px;
+  }
+  .happy .box {
+    width: auto;
+  }
+  .server .box {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .problems .box .patient {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .problems .box .patient:nth-child(even):hover {
+    -webkit-transform: translateX(-16px);
+            transform: translateX(-16px);
+  }
+  .problems .box .patient:nth-child(odd):hover {
+    -webkit-transform: translateX(16px);
+            transform: translateX(16px);
+  }
+  .problems .section_title {
+    width: initial;
+  }
+  .services .container .box:last-child {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro .container .intro_text .intro_title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .intro .container .intro_text .intro_information {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .intro .container .intro_text .intro-btn {
+    padding: 7px 15px;
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 4px;
+  }
+  .section_title {
+    font-size: 16px;
+    line-height: initial;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,10 @@
 header{
-    padding: 48px 0;
+    position: fixed;
+    width: 100%;
+    padding: 28px 0;
+    z-index: 10;
+    background: #073cac;
+    background: linear-gradient(95deg, #073cac 0%, #2a77f7 50%, #4d8fff 100%);
     .container{
         display: flex;
         justify-content: space-between;
